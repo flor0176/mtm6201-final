@@ -1,0 +1,143 @@
+/* ==================================================
+                    GLOBAL VALUES                    
+   ================================================== */
+   @import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mitr:wght@200;300;400;500;600;700&display=swap');
+
+
+/* html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+} */
+
+
+/* Root Variables */
+:root {
+    --colour-one: #DB388F;
+    --colour-two: #CBDF1E;
+    --colour-three: #7B4B9D;
+    --colour-four: #1D252C;
+    --background: #fafafa;
+    --ff-headings: "Mitr", sans-serif;
+    --ff-sub-headings: "Josefin Sans", sans-serif;
+    --ff-general:"Afacad", sans-serif;
+    --font-size-general:1rem;
+    --font-weight-general:400;
+    /* --mw: 1200px; */
+}
+
+
+body{
+    margin: 0;
+    font-family: var(--ff-general);
+    font-size: var(--font-size-general);
+    font-weight: var(--font-weight-general);
+    background-color: var(--background);
+}
+
+.main-wraper {
+    max-width: 1200px;
+}
+
+h1 {
+    font-family: var(--ff-headings);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.85rem;
+}
+
+h2 {
+    font-family: var(--ff-sub-headings);
+    text-transform:uppercase;
+    font-weight: 600;
+}
+
+h3,
+nav,
+p, 
+a {
+    font-family: var(--ff-general);
+}
+
+a {
+    font-size: 4rem;
+}
+
+.txt {
+    text-transform: uppercase;
+}
+
+.full-image {
+    /* position: absolute; */
+    width: 100%; 
+}
+
+.logo {
+    width: 9.375rem;
+}
+
+
+/* Background Navigation Menu */
+.nav-bg {
+    
+    background-color: var(--background);
+    background-image: url("../images/background-banner.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* min-height: 150px; */
+    /* ------------------- */
+    /* width: 100%; */
+    /* display: flex; */
+    /* z-index: 99; */
+}
+
+
+/* Background Hero Section */
+
+
+/* #hero {
+    background-color: var(--background);
+     position: relative; 
+    top: -42px;
+    height: 500px;
+    z-index: -1;
+    background-image: url(../images/hero-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 95%;
+}
+*/
+
+#hero {
+    background-color: var(--background);
+    background-image: url(../images/hero-banner.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+/* Add the height to the hero*/
+.d-flex{
+    height: 50vh;
+}
+
+.hero h1{
+    color:var(--colour-one);
+}
+
+
+/* Values */
+.icon-value {
+    max-width: 160px;
+}
+
+.top-left-rounded {
+    border-top-left-radius: 80px;
+}
+
+.bottom-right-rounded {
+    border-bottom-right-radius: 80px;
+}
