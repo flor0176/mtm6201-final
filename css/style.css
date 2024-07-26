@@ -64,7 +64,7 @@ a {
 }
 
 a {
-    font-size: 4rem;
+    
 }
 
 .txt {
@@ -119,6 +119,9 @@ a {
     background-size: cover;
 }
 
+.hero h1 {
+    font-size: 3rem;
+}
 /* Add the height to the hero*/
 .d-flex{
     height: 50vh;
