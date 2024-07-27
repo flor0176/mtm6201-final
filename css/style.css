@@ -1,7 +1,7 @@
 /* ==================================================
                     GLOBAL VALUES                    
    ================================================== */
-   @import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mitr:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mitr:wght@200;300;400;500;600;700&display=swap');
 
 
 /* html {
@@ -24,14 +24,14 @@
     --background: #fafafa;
     --ff-headings: "Mitr", sans-serif;
     --ff-sub-headings: "Josefin Sans", sans-serif;
-    --ff-general:"Afacad", sans-serif;
-    --font-size-general:1rem;
-    --font-weight-general:400;
+    --ff-general: "Afacad", sans-serif;
+    --font-size-general: 1rem;
+    --font-weight-general: 400;
     /* --mw: 1200px; */
 }
 
 
-body{
+body {
     margin: 0;
     font-family: var(--ff-general);
     font-size: var(--font-size-general);
@@ -52,66 +52,56 @@ h1 {
 
 h2 {
     font-family: var(--ff-sub-headings);
-    text-transform:uppercase;
+    text-transform: uppercase;
     font-weight: 600;
 }
 
 h3,
 nav,
-p, 
+p,
 a {
     font-family: var(--ff-general);
 }
 
-a {
-    
-}
+a {}
 
 .txt {
     text-transform: uppercase;
 }
 
+/* ==================================================
+                    DEFAULT VALUES - MOBILE                   
+   ================================================== */
+
 .full-image {
     /* position: absolute; */
-    width: 100%; 
+    width: 100%;
 }
 
 .logo {
     width: 9.375rem;
 }
 
-
 /* Background Navigation Menu */
 .nav-bg {
-    
+
     background-color: var(--background);
     background-image: url("../images/background-banner.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    /* min-height: 150px; */
-    /* ------------------- */
-    /* width: 100%; */
-    /* display: flex; */
-    /* z-index: 99; */
 }
 
-
-/* Background Hero Section */
-
-
-/* #hero {
-    background-color: var(--background);
-     position: relative; 
-    top: -42px;
-    height: 500px;
-    z-index: -1;
-    background-image: url(../images/hero-banner.jpg);
-    background-position: center;
-    background-size: cover;
-    opacity: 95%;
+.gradient {
+    height: 12vh;
+    background: rgb(29, 37, 44);
+    background: linear-gradient(180deg,
+            rgba(29, 37, 44, 1) 0%,
+            rgba(55, 48, 75, 1) 35%,
+            rgba(80, 58, 105, 1) 55%,
+            rgba(123, 75, 157, 1) 95%);
 }
-*/
 
+/* HERO SECTION  */
 #hero {
     background-color: var(--background);
     background-image: url(../images/hero-banner.jpg);
@@ -122,25 +112,66 @@ a {
 .hero h1 {
     font-size: 3rem;
 }
+
 /* Add the height to the hero*/
-.d-flex{
+#hero .d-flex {
     height: 50vh;
 }
 
-.hero h1{
-    color:var(--colour-one);
+.hero h1 {
+    color: var(--colour-one);
 }
 
-
-/* Values */
+/* TRANSFORM YOUR DIGITAL PRESENCE */
 .icon-value {
     max-width: 160px;
 }
 
+/* ARTWORKS COLLECTION */
 .top-left-rounded {
     border-top-left-radius: 80px;
 }
 
 .bottom-right-rounded {
     border-bottom-right-radius: 80px;
+}
+
+/*  */
+
+.position-tape {
+    position: relative;
+}
+
+.tape {
+    width: 5rem;
+    position: absolute;
+    /* transform: translate(-60px, -20px) rotate(30deg); */
+    transform: translate(-160px, -20px);
+}
+
+.position-tape-two {
+    position: relative;
+}
+
+.tape-two {
+    width: 5rem;
+    /* position: absolute; */
+    /* transform: translate(-450px, 350px) rotate(30deg); */
+    transform: translate(-10px, -20px);
+}
+
+/* MASTERPIECES */
+.service-rounded {
+    border-top-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+
+}
+
+.serv-img{
+    height: 25vh;
+    width: fit-content;
+}
+
+.service {
+    height: 400px;
 }
