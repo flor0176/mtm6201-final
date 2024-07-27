@@ -19,9 +19,9 @@
 
     <!-- MAIN WRAPPER - BACKGROUND-->
     <div class="main-wrapper">
-        <header class="nav-bg">
+        <header role="banner" class="nav-bg">
             <!-- bg-dark removed and top-fixed -->
-            <nav class="navbar navbar-expand-lg navbar-dark pt-2 gradient">
+            <nav role="navigation" id="nav" class="navbar navbar-expand-lg pt-2 gradient">
                 <div class="container">
                     <a class="navbar-brand" href="#">
                         <img class="logo" src="images/logo.svg" title="Code Concept logo"
@@ -60,13 +60,13 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li class="nav-item">
-                                    <a class="nav-link active txt" aria-current="page" href="#">Showroom</a>
+                                    <a class="text-white active txt" aria-current="page" href="#">Showroom</a>
                                 </li>
                                 <li class="nav-item txt">
-                                    <a class="nav-link" href="#">Our Studio</a>
+                                    <a class="text-white nav-link" href="#">Our Studio</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle txt" href="#" role="button"
+                                    <a class="text-white nav-link dropdown-toggle txt" href="#" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         Masterpieces
                                     </a>
@@ -79,17 +79,17 @@
                                 </li>
                             </ul>
 
-                            <form class="d-flex mt-3" role="search">
+                            <!-- <form class="d-flex mt-3" role="search">
                                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                                 <button class="btn btn-success" type="submit">Search</button>
-                            </form>
+                            </form> -->
                         </div>
                     </div>
                 </div>
             </nav>
         </header>
 
-        <main>
+        <main id="main" role="main">
             <!-- HERO SECTION -->
             <section id="hero">
                 <div class="container hero">
@@ -100,7 +100,7 @@
                                     masterpiece solutions
                                 </span>
                             </h1>
-                            <button class="btn btn-primary btn-light txt rounded-pill" type="button">Get in
+                            <button role="button" class="btn btn-primary txt rounded-pill" type="button">Get in
                                 Touch</button>
                         </div>
                     </div>
@@ -200,68 +200,158 @@
                     <h2 class="mt-2 mb-3">Masterpieces</h2>
                     <p class="txt mb-5">Explore the potential of our services and let's work together </p>
 
-                    <div class="row gy-4">
+                    <div class="row">
 
-                        <div class="col-sm-6 col-lg-3">
-        
+                        <div class="col-12 col-sm-6 col-lg-3 p-2">
+
                             <div class="card text-bg-dark service-rounded service">
-                                <img src="images/service-web-design.jpeg" class="card-img-top px-4 pt-4 img-fluid" alt="...">
+
+                                <img src="images/service-web-design.jpeg" class="card-img-top px-4 pt-4 img-fluid"
+                                    alt="Close-up image of of laptop keyboard">
+
                                 <div class="card-body">
                                     <h3 class="card-title txt">Web Design</h3>
-                                    <p class="card-text">Create a unique online presence with our custom-designed websites to your brand.</p>
-                                    <a href="#" class="btn btn-light rounded-pill">More information</a>
+                                    <p class="card-text">Create a unique online presence with our custom-designed
+                                        websites to your brand.</p>
+                                    <a href="#" class="btn btn-light rounded-pill ms-auto">More information</a>
                                 </div>
                             </div>
 
-                        </div>  
+                        </div>
 
-                        <div class="col-sm-6 col-lg-3">
-        
+                        <div class="col-12 col-sm-6 col-lg-3 p-2">
+
                             <div class="card text-bg-dark service-rounded service">
-                                <img src="images/service-branding.jpg" class="card-img-top px-4 pt-4 img-fluid" alt="...">
+
+                                <img src="images/service-branding.jpg" class="card-img-top px-4 pt-4 mb-3 img-fluid "
+                                    alt="Image of a computer monitor showing a wireframe">
+
                                 <div class="card-body">
                                     <h3 class="card-title txt">Branding</h3>
-                                    <p class="card-text">Elevate your brand with compelling visuals and a cohesive identity that stands out.</p>
+                                    <p class="card-text">Elevate your brand with compelling visuals and a cohesive
+                                        identity that stands out.</p>
                                     <a href="#" class="btn btn-light rounded-pill">More information</a>
                                 </div>
                             </div>
 
-                        </div> 
+                        </div>
 
-                        <div class="col-sm-6 col-lg-3">
-        
+                        <div class="col-12 col-sm-6 col-lg-3 p-2">
                             <div class="card text-bg-dark service-rounded service">
-                                <img src="images/service-graphic-design.jpeg" class="card-img-top px-4 pt-4 img-fluid" alt="...">
+                                <img src="images/service-graphic-design.jpeg" class="card-img-top px-4 pt-4 img-fluid"
+                                    alt="...">
                                 <div class="card-body">
                                     <h3 class="card-title txt">Graphic Design</h3>
-                                    <p class="card-text">Engage your audience with stunning digital designs that captivate and inspire.</p>
+                                    <p class="card-text">Engage your audience with stunning digital designs that
+                                        captivate and inspire.</p>
                                     <a href="#" class="btn btn-light rounded-pill">More information</a>
                                 </div>
                             </div>
 
-                        </div> 
+                        </div>
 
-                        <div class="col-sm-6 col-lg-3">
-        
+                        <div class="col-12 col-sm-6 col-lg-3 p-2">
+
                             <div class="card text-bg-dark service-rounded service">
                                 <img src="images/service-ux-ui-design.jpeg" class="card-img-top px-4 pt-4" alt="...">
                                 <div class="card-body">
                                     <h3 class="card-title txt">UX/UI Design</h3>
-                                    <p class="card-text">Enhance user experience with intuitive and aesthetically pleasing UX/UI design.</p>
+                                    <p class="card-text">Enhance user experience with intuitive and aesthetically
+                                        pleasing UX/UI design.</p>
                                     <a href="#" class="btn btn-light rounded-pill">More information</a>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </section>
 
+            <!-- FEATURED ARTISTS -->
+            <section class="mt-5 py-5 text-center">
+                <div class="container">
+
+                    <h2 class="mt-2 mb-3">Featured Artists</h2>
+                    <p class="txt mb-5">Join our vibrant community That trusts Code Concept to bring their visions to
+                        life</p>
+
+                    <div class="row mb-4 d-flex align-items-center">
+
+                        <div class="col-12 col-md-4 categories left d-flex flex-column justify-content-center align-items-center mb-4 mt-4">
+                            <img class="feature-image position-tape" src="images/crafter.jpg"
+                                alt="Image showing hands of a craftsman molding clay">
+                            <img class="img-fluid tape-crafter" src="images/tape-purple.svg"
+                                alt="Decorative ilustration with shape of a tape">
+                            <p><a href="#" class="text-reset text-decoration-none">&lt;/Crafters/&gt;</a></p>
+                        </div>
+                        <div class="col-12 col-md-4 categories d-flex flex-column justify-content-center align-items-center mb-4 mt-4">
+                            <img class="feature-image mb-4 mt-4" src="images/photographer.jpg"
+                                alt="Image showing hands of a photographer holding the camera">
+                            <p><a href="#" class="text-reset text-decoration-none">&lt;/Photographers/&gt;</a></p>
+                        </div>
+                        <div class="col-12 col-md-4 categories right d-flex flex-column justify-content-center align-items-center mb-4 mt-4">
+                            <img class="feature-image categories mb-4 mt-4" src="images/digital-artist.jpg" alt="Image of a digital artist drawing on a tablet">
+                            <p><a href="#" class="text-reset text-decoration-none">&lt;/Digital Artists/&gt;</a></p>
+                        </div>
+                    </div> 
+                </div>     
+            </section>
 
 
-
-
-
-
+            <!-- Footer -->
+            <footer role="contentinfo" class="bg-dark text-white pt-4 pb-4 gradient-footer">
+                <div class="container ">
+                    <div class="row d-flex align-items-center">
+                        <!-- Column 1 -->
+                        <div class="col-6 col-md-3 mb-4">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-white text-decoration-none custom-links">Showroom</a></li>
+                                <li><a href="#" class="text-white text-decoration-none custom-links">Masterpieces</a>
+                                </li>
+                                <li><a href="#" class="text-white text-decoration-none custom-links">Our Studio</a></li>
+                                <li><a href="#" class="text-white text-decoration-none custom-links">Art Resources</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Column 2 -->
+                        <div class="col-6 col-md-3 mb-4">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-white text-decoration-none custom-links">Gallery</a></li>
+                                <li><a href="#" class="text-white text-decoration-none custom-links">Artworks
+                                        Collection</a></li>
+                                <li><a href="#" class="text-white text-decoration-none custom-links">Featured
+                                        Artists</a></li>
+                                <li><a href="#" class="text-white text-decoration-none custom-links">Artist
+                                        Statements</a></li>
+                            </ul>
+                        </div>
+                        <!-- Column 3 -->
+                        <div class="col-6 col-md-3 mb-4">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-white text-decoration-none custom-links">Inspired?</a></li>
+                                <li><a href="#" class="text-white text-decoration-none custom-links">Connect with Us</a>
+                                </li>
+                                <li><a href="#" class="text-white text-decoration-none custom-links">FAQs</a></li>
+                                <li><a href="#" class="text-white text-decoration-none custom-links">Want to Join
+                                        Us?</a></li>
+                            </ul>
+                        </div>
+                        <!-- Column 4 -->
+                        <div class="col-6 col-md-3 mb-4">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-white text-decoration-none custom-links">More
+                                        information:</a></li>
+                                <li><a href="#" class="text-white text-decoration-none custom-links">Artworks
+                                        Collection</a></li>
+                                <li><a href="#" class="text-white text-decoration-none custom-links">Terms of
+                                        Services</a></li>
+                                <li><a href="#" class="text-white text-decoration-none custom-links">Privacy Policiy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="text-center">&copy; 2024 | Code Concept</p>
+                </div>
+            </footer>
         </main>
 
     </div> <!--Main wrapper-->
