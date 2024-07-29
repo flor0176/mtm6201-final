@@ -61,6 +61,8 @@ nav,
 p,
 a {
     font-family: var(--ff-general);
+    font-weight:400;
+    font-style: normal;
 }
 
 
@@ -75,21 +77,32 @@ a{
 .nav-link a{
   /* --bs-navbar-color: rgba(255, 255, 255, 0.55); */
   --bs-navbar-hover-color: #A04ADD;
-  --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
-  --bs-navbar-active-color: var(--colour-one);
+  /* --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25); */
+  /* --bs-navbar-active-color: var(--colour-one); */
   /* --bs-navbar-brand-color: #fff; */
-  --bs-navbar-brand-hover-color: #fff;
+  /* --bs-navbar-brand-hover-color: #fff; */
   /* --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1); */
   /* --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); */
 }
 
+.nav-link {
+        --bs-nav-link-font-weight: 600;
+        --bs-nav-link-color: var(--background);
+        --bs-nav-link-hover-color: var(--colour-two);
+        /* --bs-nav-link-active-color:red; */
+}
+
+.nav-link.active {
+    --bs-navbar-active-color:var(--colour-five);
+}
+
+/* Change colour hamburger menu icon */
 .navbar-toggler {
     --bs-navbar-toggler-border-color: var(--background);
 }
 .navbar-toggler-icon {
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-
 
 /* Button color and states */
 .btn-primary {
@@ -240,10 +253,10 @@ a{
 }
 
 
-.tape-crafter {
+#tape-craft.tape-crafter {
     width: 5rem;
     position: absolute;
-    transform: translate(-50px, -90px);
+    transform: translate(-10px, -130px);
 }
 
 .gradient-footer {
@@ -256,11 +269,28 @@ a{
 }
 
 
-/************* OUR STUDIO *********************/
+/******************** OUR STUDIO ********************/
 
 /* MISSION */
 .mission-img{
     object-fit: cover;
     height: 35vh;
     width: 35vh;
+}
+
+
+/******************** CONTACT US ********************/
+
+.tape-form {
+    width: 7rem;
+    position: absolute;
+    transform: translate(10px, -20px);
+}
+
+/* VISIT US */
+/* set the dimensions and padding for the map */
+.block-map .gmap {
+    border: 0;
+    width: 100%;
+    height: 50vh;
 }
