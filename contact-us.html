@@ -34,7 +34,7 @@
                                 <a class="nav-link txt" href="index.html">Showroom</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link txt" href="#">Our Studio</a>
+                                <a class="nav-link txt" href="our-studio.html">Our Studio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link txt active" aria-current="page" href="contact-us.html">Contact
@@ -115,30 +115,30 @@
                 </div>
 
                 <!-- CONTACT FORM -->
-                <div class="container mt-5 mb d-flex justify-content-center position-tape">
+                <div class="container mt-5 mb d-flex justify-content-center position-tape" itemscope itemtype="https://schema.org/ContactPage">
                     <img class="img-fluid tape-form" src="images/tape-blue.svg"
                         alt="Decorative ilustration with shape of a tape">
-                    <form class="bg-dark service-rounded py-5 col-xs-6 col-md-8 col-lg-8">
+                    <form class="bg-dark service-rounded py-5 col-xs-6 col-md-8 col-lg-8" itemscope itemtype="https://schema.org/ContactPoint">
                         <div class="row justify-content-center">
                             <div class="col-10 mb-2">
                                 <label for="first-name">First Name</label>
-                                <input type="text" class="form-control" id="first-name" placeholder="First Name">
+                                <input type="text" class="form-control" id="first-name" placeholder="First Name" itemprop="name">
                             </div>
                             <div class="col-10 mb-2">
                                 <label for="last-name">Last Name</label>
-                                <input type="text" class="form-control" id="last-name" placeholder="Last Name">
+                                <input type="text" class="form-control" id="last-name" placeholder="Last Name" itemprop="last name">
                             </div>
                             <div class="col-10 mb-2">
                                 <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Email">
+                                <input type="email" class="form-control" id="email" placeholder="Email" itemprop="email">
                             </div>
                             <div class="col-10 mb-2">
                                 <label for="message">Message</label>
                                 <textarea class="form-control mb-2" id="message" rows="5"
-                                    placeholder="How we can help you?" required></textarea>
+                                    placeholder="How we can help you?"  aria-label="Add your message here" itemprop="message"></textarea>
                             </div>
                             <div>
-                                <button type="submit" class="btn btn-primary rounded-pill px-4 txt mt-4">Submit</button>
+                                <button type="submit" class="btn btn-primary rounded-pill px-4 txt mt-4" aria-label="Submit information">Submit</button>
                             </div>
                         </div>
                     </form>
@@ -229,6 +229,93 @@
                     </div>
                 </div>
             </section>
+
+       <!-- FOOTER -->
+       <footer role="contentinfo" class="bg-dark pt-5 pb-3 gradient-footer">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <!-- Column 1 -->
+                <div class="col-6 col-md-3 mb-4 nav-bar">
+                    <ul class="list-unstyled">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Showroom</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Masterpieces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="our-studio.html">Our Studio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Art Resources</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-6 col-md-3 mb-4 nav-bar">
+                    <ul class="list-unstyled">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Artworks Collection</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Featured Artists</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Artist Statements</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Column 3 -->
+                <div class="col-6 col-md-3 mb-4 nav-bar">
+                    <ul class="list-unstyled">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Get Inspired</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">Connect with Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Want to Join Us?</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Column 4 -->
+                <div class="col-6 col-md-3 mb-4">
+                    <ul class="list-unstyled">
+                        <li class="">
+                            <p class="text-white text-decoration-none">More information:</p>
+                        </li>
+                        <li class="d-flex nav-item align-items-center">
+                            <a class="nav-link px-1" href="https://www.linkedin.com/"> 
+                                <img src="/images/prueva.svg" title="LinkedIn"></a>
+                            <a class="nav-link" href="https://github.com/">
+                                <img src="/images/github.svg" title="GitHub"></a>
+                            <a class="nav-link" href="https://www.instagram.com/">
+                                <img src="/images/instagram.svg" title="Instagram"></a>
+                            <a class="nav-link" href="#">
+                                <img src="/images/email.svg" title="Email"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Terms of Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Privacy Policiy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-12 mb-4">
+                    <p class="text-center text-white">&copy; 2024 | Code Concept</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
         </main>

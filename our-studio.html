@@ -77,7 +77,7 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link txt" href="contact-us.html">Contact Us</a>
-              </li>
+                </li>
               </ul>
             </div>
           </div>
@@ -91,7 +91,10 @@
           <h1 class="pt-5 mb-4 txt display-1 fw-bold">Our Studio</h1>
           <div class="row">
             <div class="col-lg-12">
-              <p>At CODE CONCEPT, Media Studio will deliver creative solutions that are clean, simple, and stunning that will make your business stand out among others.Our Media Studio focuses on artistic small businesses looking to establish a solid online presence that differentiates them from their competitors through unique and story-driven designs.</p>
+              <p>At CODE CONCEPT, Media Studio will deliver creative solutions that are clean, simple, and stunning that
+                will make your business stand out among others.Our Media Studio focuses on artistic small businesses
+                looking to establish a solid online presence that differentiates them from their competitors through
+                unique and story-driven designs.</p>
             </div>
           </div>
         </div>
@@ -157,7 +160,7 @@
             </div>
 
             <div class="col-lg-6">
-              <img src="images/our-artisan.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+              <img src="images/our-artisan.png" class="d-block mx-lg-auto img-fluid" alt="Image with two illustrations, one image is the photo of the founder of Code Concept and the other images is a photograph of a origami shape"
                 loading="lazy">
             </div>
           </div>
@@ -165,34 +168,36 @@
       </section>
 
       <!-- ARTIST STATEMENTS -->
-      <section id="values" class="mt-5 pt-5 text-center">
+      <section id="values" class="mt-5 pt-5 text-center" role="complementary" itemscope
+      itemtype="https://schema.org/Review">
         <div class="container">
           <h2 class="mb-3 text-center">Artists Statements</h2>
           <p class="txt mb-5">Discover the impact of our creative solutions through the words of our valued clients</p>
 
           <div class="reviews">
             <div class="row">
-              <div class="py-5 col-12 col-md-12 col-lg-4 flex-column justify-content-center align-items-center">
+              <div class="py-5 col-12 col-md-12 col-lg-4 flex-column justify-content-center align-items-center" itemprop="review">
                 <img src="images/testimonial-catherine.png" class="img-fluid icon-value rounded-circle"
                   alt="Icon image with a monitor that conains a pencil, brush and rule ilustration">
-                <p class="icon-text mt-4 ">“Code Concept transformed my photography business with a stunning portfolio site. Their attention to detail and understanding of my vision were incredible. Highly recommend!”
-                  <br>— Catherine Mooney, Photographer
+                <p class="icon-text mt-4 ">“Code Concept transformed my photography business with a stunning portfolio
+                  site. Their attention to detail and understanding of my vision were incredible. Highly recommend!”
+                  <br itemprop="author">— Catherine Mooney, Photographer
                 </p>
               </div>
 
-              <div class="py-5 col-12 col-md-12 col-lg-4 d-flex flex-column justify-content-center align-items-center">
+              <div class="py-5 col-12 col-md-12 col-lg-4 d-flex flex-column justify-content-center align-items-center" itemprop="review">
                 <img src="images/testimonial-carl.png" class="img-fluid icon-value"
                   alt="Icon image with a paint palette ilustration">
                 <p class="icon-text mt-4 ">"Code Concept beautifully captured my brand and helped me reach a broader
-                  audience. Melissa's creativity and expertise are unmatched!"<br> — Carl Thompson, Crafter</p>
+                  audience. Melissa's creativity and expertise are unmatched!"<br itemprop="author"> — Carl Thompson, Crafter</p>
               </div>
 
-              <div class="py-5 col-12 col-md-12 d-flex col-lg-4 flex-column justify-content-center align-items-center">
+              <div class="py-5 col-12 col-md-12 d-flex col-lg-4 flex-column justify-content-center align-items-center" itemprop="review">
                 <img src="images/testimonial-damian.png" class="img-fluid icon-value"
                   alt="Icon image with a frame ilustration">
                 <p class="icon-text mt-4 ">"Code Concept brought my digital art portfolio to life with an innovative and
                   captivating design. Their blend of creativity and technical expertise is remarkable."
-                  <br> — Damian Sule, Concept Artist
+                  <br itemprop="author"> — Damian Sule, Concept Artist
                 </p>
               </div>
             </div>
@@ -201,60 +206,91 @@
       </section>
 
       <!-- FOOTER -->
-      <footer role="contentinfo" class="bg-dark text-white pt-4 pb-4 gradient-footer ">
-        <div class="container ">
-          <div class="row d-flex align-items-center">
-            <!-- Column 1 -->
-            <div class="col-6 col-md-3 mb-4">
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-white text-decoration-none custom-links">Showroom</a></li>
-                <li><a href="#" class="text-white text-decoration-none custom-links">Masterpieces</a>
-                </li>
-                <li><a href="#" class="text-white text-decoration-none custom-links">Our Studio</a></li>
-                <li><a href="#" class="text-white text-decoration-none custom-links">Art Resources</a>
-                </li>
-              </ul>
+      <footer role="contentinfo" class="bg-dark pt-5 pb-3 gradient-footer">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <!-- Column 1 -->
+                <div class="col-6 col-md-3 mb-4 nav-bar">
+                    <ul class="list-unstyled">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Showroom</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Masterpieces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="our-studio.html">Our Studio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Art Resources</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-6 col-md-3 mb-4 nav-bar">
+                    <ul class="list-unstyled">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Artworks Collection</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Featured Artists</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Artist Statements</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Column 3 -->
+                <div class="col-6 col-md-3 mb-4 nav-bar">
+                    <ul class="list-unstyled">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Get Inspired</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">Connect with Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Want to Join Us?</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Column 4 -->
+                <div class="col-6 col-md-3 mb-4">
+                    <ul class="list-unstyled">
+                        <li class="">
+                            <p class="text-white text-decoration-none">More information:</p>
+                        </li>
+                        <li class="d-flex nav-item align-items-center">
+                            <a class="nav-link px-1" href="https://www.linkedin.com/"> 
+                                <img src="/images/prueva.svg" title="LinkedIn"></a>
+                            <a class="nav-link" href="https://github.com/">
+                                <img src="/images/github.svg" title="GitHub"></a>
+                            <a class="nav-link" href="https://www.instagram.com/">
+                                <img src="/images/instagram.svg" title="Instagram"></a>
+                            <a class="nav-link" href="#">
+                                <img src="/images/email.svg" title="Email"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Terms of Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Privacy Policiy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-12 mb-4">
+                    <p class="text-center text-white">&copy; 2024 | Code Concept</p>
+                </div>
             </div>
-            <!-- Column 2 -->
-            <div class="col-6 col-md-3 mb-4">
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-white text-decoration-none custom-links">Gallery</a></li>
-                <li><a href="#" class="text-white text-decoration-none custom-links">Artworks
-                    Collection</a></li>
-                <li><a href="#" class="text-white text-decoration-none custom-links">Featured
-                    Artists</a></li>
-                <li><a href="#" class="text-white text-decoration-none custom-links">Artist
-                    Statements</a></li>
-              </ul>
-            </div>
-            <!-- Column 3 -->
-            <div class="col-6 col-md-3 mb-4">
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-white text-decoration-none custom-links">Inspired?</a></li>
-                <li><a href="#" class="text-white text-decoration-none custom-links">Connect with Us</a>
-                </li>
-                <li><a href="#" class="text-white text-decoration-none custom-links">FAQs</a></li>
-                <li><a href="#" class="text-white text-decoration-none custom-links">Want to Join
-                    Us?</a></li>
-              </ul>
-            </div>
-            <!-- Column 4 -->
-            <div class="col-6 col-md-3 mb-4">
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-white text-decoration-none custom-links">More
-                    information:</a></li>
-                <li><a href="#" class="text-white text-decoration-none custom-links">Artworks
-                    Collection</a></li>
-                <li><a href="#" class="text-white text-decoration-none custom-links">Terms of
-                    Services</a></li>
-                <li><a href="#" class="text-white text-decoration-none custom-links">Privacy Policiy</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <p class="text-center">&copy; 2024 | Code Concept</p>
         </div>
-      </footer>
+    </footer>
 
     </main>
   </div> <!--Main wrapper-->

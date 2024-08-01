@@ -8,11 +8,11 @@
     box-sizing: border-box;
 }*/
 
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
+} */
 
 /* Root Variables */
 :root {
@@ -73,6 +73,7 @@ a {
 a{
     cursor: pointer;
 }
+
 /* anchor links */
 .nav-link a{
   /* --bs-navbar-color: rgba(255, 255, 255, 0.55); */
@@ -137,12 +138,15 @@ a{
     --bs-btn-disabled-border-color: var(--colour-one);;
   }
 
+  .dropdown-menu{
+    background-color: var(--colour-five);
+  }
+
 /* ==================================================
                     DEFAULT VALUES - MOBILE                   
    ================================================== */
 
 .full-image {
-    /* position: absolute; */
     width: 100%;
 }
 
@@ -160,7 +164,7 @@ a{
 }
 
 .gradient {
-    height: 12vh;
+    height:15vh;
     background: rgb(29, 37, 44);
     background: linear-gradient(180deg,
             rgba(29, 37, 44, 1) 0%,
@@ -252,7 +256,6 @@ a{
     max-width: 35vh;
 }
 
-
 #tape-craft.tape-crafter {
     width: 5rem;
     position: absolute;
@@ -278,7 +281,6 @@ a{
     width: 35vh;
 }
 
-
 /******************** CONTACT US ********************/
 
 .tape-form {
@@ -294,3 +296,10 @@ a{
     width: 100%;
     height: 50vh;
 }
+
+/* Animations */
+.animate__animated.animate__bounce {
+    --animate-duration: 2s;
+  }
+
+
