@@ -8,8 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
-
+    <!-- Additional libraries-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -33,13 +34,13 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active txt" aria-current="page" href="#">Showroom</a>
+                                <a class="nav-link active text-uppercase" aria-current="page" href="#">Showroom</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link txt" href="our-studio.html">Our Studio</a>
+                                <a class="nav-link text-uppercase" href="our-studio.html">Our Studio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link txt" href="contact-us.html">Contact Us</a>
+                                <a class="nav-link text-uppercase" href="contact-us.html">Contact Us</a>
                             </li>
                         </ul>
                     </div>
@@ -62,13 +63,13 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li class="nav-item">
-                                    <a class="nav-link active txt" aria-current="page" href="#">Showroom</a>
+                                    <a class="nav-link active text-uppercase" aria-current="page" href="#">Showroom</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link txt" href="our-studio.html">Our Studio</a>
+                                    <a class="nav-link text-uppercase" href="our-studio.html">Our Studio</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle txt" href="#" role="button"
+                                    <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         Masterpieces
                                     </a>
@@ -80,7 +81,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link txt" href="contact-us.html">Contact Us</a>
+                                    <a class="nav-link text-uppercase" href="contact-us.html">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
@@ -91,17 +92,17 @@
 
         <main id="main" role="main">
             <!-- HERO SECTION -->
-            <section id="hero">
+            <section id="hero" class="headline">
                 <div class="container hero">
                     <div class="d-flex justify-content-center align-items-center">
                         <div class="text-center">
-                            <h1 class="mb-4 display-1 fw-bold">Crafting your ideas into <br>
-                                <span class="text-white display-2 fw-bold">
+                            <h1 class="mb-4 fw-bold">Crafting your ideas into <br>
+                                <span class="text-white display-4 fw-bold">
                                     masterpiece solutions
                                 </span>
                             </h1>
                             <button role="button"
-                                class="btn btn-primary txt rounded-pill mt-5 py-2 animate__animated animate__bounce"
+                                class="btn btn-primary text-uppercase rounded-pill mt-5 py-2 animate__animated animate__bounce"
                                 type="button">Get in Touch</button>
                         </div>
                     </div>
@@ -109,10 +110,11 @@
             </section>
 
             <!-- TRANSFORM YOUR DIGITAL PRESENCE -->
-            <section id="values" class="mt-5 pt-5 text-center">
+            <section id="values" class="mt-5 pt-5 text-center headline">
                 <div class="container">
                     <h2 class="mb-3 text-center">Transform Your Digital Presence</h2>
-                    <p class="txt mb-5">Stand out from the competition with a unique and compelling design</p>
+                    <h3 class="text-uppercase mb-5">Stand out from the competition with a unique and compelling design
+                    </h3>
 
                     <div class="bg-dark rounded-4 p-5">
                         <div class="row">
@@ -145,48 +147,75 @@
             </section>
 
             <!-- ARTWORKS COLLECTION -->
-            <section class="mt-5 py-5 text-center">
+            <section class="mt-5 py-5 text-center headline">
                 <div class="container">
 
                     <img src="images/line.png" class="img-fluid mb-5" alt="ilustration of a curvy line">
 
                     <h2 class="mt-2 mb-3">Artworks Collection</h2>
-                    <p class="txt mb-5">See how Code Concept has transformed visions into reality</p>
+                    <h3 class="text-uppercase mb-5">See how Code Concept has transformed visions into reality</h3>
 
                     <div class="row mb-4">
                         <!-- Images Collection -->
-                        <div class="col-6 col-md-4">
-                            <img class="img-fluid top-left-rounded bottom-right-rounded" src="images/artwork-1.jpg"
-                                alt="Image of two laptops showing a website">
+                        <div class="col-6 col-md-4 align-self-center">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/artwork-1-600_x_400.jpg">
+                                <source media="(min-width: 769px)" srcset="images/artwork-1-1200_x_800.jpg">
+                                <img class="img-fluid top-left-rounded bottom-right-rounded"
+                                    src="images/artwork-1-600_x_400.jpg" alt="Image of two laptops showing a website">
+                            </picture>
                         </div>
                         <div class="col-6 col-md-4 align-self-center position-tape">
-                            <img class="img-fluid" src="images/artwork-2.png"
-                                alt="Image showing an artist template design">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/artwork-2-600_x_343.png">
+                                <source media="(min-width: 769px)" srcset="images/artwork-2-1200_x_687.png">
+                                <img class="img-fluid" src="images/artwork-2-600_x_343.png"
+                                    alt="Image showing an artist template design">
+                            </picture>
                             <img class="img-fluid tape" src="images/tape-blue.svg"
                                 alt="Decorative illustration with shape of a tape">
                         </div>
                         <div class="col-6 col-md-4 align-self-center">
-                            <img class="img-fluid" src="images/artwork-3.jpg" alt="Image showing a moodboard template">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/artwork-3-600_x_388.jpg">
+                                <source media="(min-width: 769px)" srcset="images/artwork-3-1200_x_776.jpg">
+                                <img class="img-fluid" src="images/artwork-3-600_x_388.jpg"
+                                    alt="Image showing a moodboard template">
+                            </picture>
                         </div>
                         <div class="col-6 col-md-4 align-self-center">
-                            <img class="img-fluid" src="images/artwork-4.png"
-                                alt="Image showing an arts handcraft template design">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/artwork-4-600_x_337.png">
+                                <source media="(min-width: 769px)" srcset="images/artwork-4-1200_x_675.png">
+                                <img class="img-fluid" src="images/artwork-4-600_x_337.png"
+                                    alt="Image showing an arts handcraft template design">
+                            </picture>
                         </div>
                         <div class="col-6 col-md-4 align-self-center position-tape-two">
-                            <img class="img-fluid" src="images/artwork-5.png"
-                                alt="Image showing a media design website">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/artwork-5-600_x_553.png">
+                                <source media="(min-width: 769px)" srcset="images/artwork-5-1200_x_1107.png">
+                                <img class="img-fluid" src="images/artwork-5-600_x_553.png"
+                                    alt="Image showing a media design website">
+                            </picture>
                             <img class="img-fluid tape-two" src="images/tape-green.svg"
                                 alt="Decorative illustration with shape of a tape">
                         </div>
                         <div class="col-6 col-md-4 align-self-center">
-                            <img class="img-fluid top-left-rounded bottom-right-rounded" src="images/artwork-6.jpg"
-                                alt="Image showing a photography template design">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/artwork-6-600_x_337.jpg">
+                                <source media="(min-width: 769px)" srcset="images/artwork-6-1200_x_674.jpg">
+                                <img class="img-fluid top-left-rounded bottom-right-rounded"
+                                    src="images/artwork-6-600_x_337.jpg"
+                                    alt="Image showing a photography template design">
+                            </picture>
                         </div>
 
                     </div>
 
                     <div class="mt-5 mb-5 text-center">
-                        <p class="txt">“Unique designs that capture your audience's attention with a
+                        <p class="fst-italic text-uppercase">“Unique designs that capture your audience's attention with
+                            a
                             distinctive appearance and atmosphere”</p>
                     </div>
 
@@ -195,23 +224,26 @@
             </section>
 
             <!-- MASTERPIECES -->
-            <section class="ms-auto text-center">
+            <section class="ms-auto text-center headline">
                 <div class="container">
-
                     <h2 class="mt-2 mb-3">Masterpieces</h2>
-                    <p class="txt mb-5">Explore the potential of our services and let's work together </p>
+                    <h3 class="text-uppercase mb-5">Explore the potential of our services and let's work together </h3>
 
                     <div class="row">
-
                         <div class="col-12 col-sm-6 col-lg-3 p-2">
-
                             <div class="card text-bg-dark service-rounded service">
-
-                                <img src="images/service-web-design.jpeg" class="card-img-top px-4 pt-4 img-fluid"
-                                    alt="Close-up image of of laptop keyboard">
+                                <picture>
+                                    <source media="(max-width: 768px)"
+                                        srcset="images/service-web-design-600_x_400.jpeg">
+                                    <source media="(min-width: 769px)"
+                                        srcset="images/service-web-design-1200_x_800.jpeg">
+                                    <img class="card-img-top px-4 pt-4 img-fluid"
+                                        src="images/service-web-design-600_x_400.jpeg"
+                                        alt="Close-up image of of laptop keyboard">
+                                </picture>
 
                                 <div class="card-body">
-                                    <h3 class="card-title txt">Web Design</h3>
+                                    <h3 class="card-title text-uppercase">Web Design</h3>
                                     <p class="card-text">Create a unique online presence with our custom-designed
                                         websites to your brand.</p>
                                     <a href="#" class="btn btn-light rounded-pill ms-auto">More information</a>
@@ -223,12 +255,16 @@
                         <div class="col-12 col-sm-6 col-lg-3 p-2">
 
                             <div class="card text-bg-dark service-rounded service">
-
-                                <img src="images/service-branding.jpg" class="card-img-top px-4 pt-4 mb-3 img-fluid "
-                                    alt="Image of a computer monitor showing a wireframe">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="images/service-branding-600_x_375.jpg">
+                                    <source media="(min-width: 769px)" srcset="images/service-branding-1200_x_750.jpg">
+                                    <img class="card-img-top px-4 pt-4 mb-3 img-fluid"
+                                        src="images/service-branding-600_x_375.jpg"
+                                        alt="Image of a computer monitor showing a wireframe">
+                                </picture>
 
                                 <div class="card-body">
-                                    <h3 class="card-title txt">Branding</h3>
+                                    <h3 class="card-title text-uppercase">Branding</h3>
                                     <p class="card-text">Elevate your brand with compelling visuals and a cohesive
                                         identity that stands out.</p>
                                     <a href="#" class="btn btn-light rounded-pill">More information</a>
@@ -238,26 +274,40 @@
                         </div>
 
                         <div class="col-12 col-sm-6 col-lg-3 p-2">
+
                             <div class="card text-bg-dark service-rounded service">
-                                <img src="images/service-graphic-design.jpeg" class="card-img-top px-4 pt-4 img-fluid"
-                                    alt="Image of a desk with a monitor, a keyboard, glasses, notebook, pencil and office stationery items">
+                                <picture>
+                                    <source media="(max-width: 768px)"
+                                        srcset="images/service-graphic-design-600_x_419.jpeg">
+                                    <source media="(min-width: 769px)"
+                                        srcset="images/service-graphic-design-1200_x_839.jpeg">
+                                    <img class="card-img-top px-4 pt-4 img-fluid"
+                                        src="images/service-graphic-design-600_x_419.jpeg"
+                                        alt="Image of a desk with a monitor, a keyboard, glasses, notebook, pencil and office stationery items">
+                                </picture>
                                 <div class="card-body">
-                                    <h3 class="card-title txt">Graphic Design</h3>
+                                    <h3 class="card-title text-uppercase">Graphic Design</h3>
                                     <p class="card-text">Engage your audience with stunning digital designs that
                                         captivate and inspire.</p>
                                     <a href="#" class="btn btn-light rounded-pill">More information</a>
                                 </div>
                             </div>
-
                         </div>
 
                         <div class="col-12 col-sm-6 col-lg-3 p-2">
 
                             <div class="card text-bg-dark service-rounded service">
-                                <img src="images/service-ux-ui-design.jpeg" class="card-img-top px-4 pt-4"
-                                    alt="Image illustration of UX/UI design with shapes of desktop and mobile device templates">
+                                <picture>
+                                    <source media="(max-width: 768px)"
+                                        srcset="images/service-ux-ui-design-600_x_400.jpeg">
+                                    <source media="(min-width: 769px)"
+                                        srcset="images/service-ux-ui-design-1200_x_800.jpeg">
+                                    <img class="card-img-top px-4 pt-4"
+                                        src="images/service-ux-ui-design-600_x_400.jpeg"
+                                        alt="Image illustration of UX/UI design with shapes of desktop and mobile device templates">
+                                </picture>
                                 <div class="card-body">
-                                    <h3 class="card-title txt">UX/UI Design</h3>
+                                    <h3 class="card-title text-uppercase">UX/UI Design</h3>
                                     <p class="card-text">Enhance user experience with intuitive and aesthetically
                                         pleasing UX/UI design.</p>
                                     <a href="#" class="btn btn-light rounded-pill">More information</a>
@@ -269,36 +319,52 @@
             </section>
 
             <!-- FEATURED ARTISTS -->
-            <section class="mt-5 py-5 text-center">
+            <section class="mt-5 py-5 text-center headline">
                 <div class="container">
 
                     <h2 class="mt-2 mb-3 ">Featured Artists</h2>
-                    <p class="txt mb-5">Join our vibrant community That trusts Code Concept to bring their visions to
-                        life</p>
+                    <h3 class="text-uppercase mb-5">Join our vibrant community That trusts Code Concept to bring their
+                        visions to
+                        life</h3>
 
                     <div class="row mb-4 d-flex align-items-center">
 
                         <div
                             class="col-xs-12 col-md-4 position-tape categories left d-flex flex-column justify-content-center align-items-center mb-4 mt-4">
-                            <img class="feature-image mb-4 mt-4 " src="images/crafter.jpg"
-                                alt="Image showing hands of a craftsman molding clay">
-                            <img class=" img-fluid tape-crafter" id="tape-craft" src="images/tape-blue.svg"
-                                alt="Decorative ilustration with shape of a tape">
-                            <p><a href="#" class="text-reset text-decoration-none txt fw-bold">&lt;/Crafters/&gt;</a>
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/crafter-600_x_628.png">
+                                <source media="(min-width: 769px)" srcset="images/crafter-1200_x_1257.png">
+                                <img class="feature-image mb-1 mt-4"
+                                    src="images/crafter-600_x_628.png"
+                                    alt="Image showing hands of a craftsman molding clay">
+                            </picture>
+                            <p><a href="#"
+                                    class="text-decoration-none text-uppercase fw-bold custom-link">&lt;/Crafters/&gt;</a>
                             </p>
                         </div>
                         <div
                             class="col-xs-12 col-md-4 categories d-flex flex-column justify-content-center align-items-center mb-4 mt-4">
-                            <img class="feature-image mb-4 mt-4" src="images/photographer.jpg"
-                                alt="Image showing hands of a photographer holding the camera">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/photographer-600_x_628.png">
+                                <source media="(min-width: 769px)" srcset="images/photographer-1200_x_1257.png">
+                                <img class="feature-image mb-1 mt-4"
+                                    src="images/photographer-600_x_628.png"
+                                    alt="Image showing hands of a photographer holding the camera">
+                            </picture>
                             <p><a href="#"
-                                    class="text-reset text-decoration-none txt fw-bold">&lt;/Photographers/&gt;</a></p>
+                                    class="text-decoration-none text-uppercase fw-bold custom-link">&lt;/Photographers/&gt;</a>
+                            </p>
                         </div>
                         <div
                             class="col-xs-12 col-md-4 categories right d-flex flex-column justify-content-center align-items-center mb-4 mt-4">
-                            <img class="feature-image categories mb-4 mt-4" src="images/digital-artist.jpg"
-                                alt="Image of a digital artist drawing on a tablet">
-                            <p><a href="#" class="text-reset text-decoration-none txt fw-bold">&lt;/Digital
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/digital-artist-600_x_628.png">
+                                <source media="(min-width: 769px)" srcset="images/digital-artist-1200_x_1257.png">
+                                <img class="feature-image mb-1 mt-4"
+                                    src="images/digital-artist-600_x_628.png"
+                                    alt="Image of a digital artist drawing on a tablet">
+                            </picture>
+                            <p><a href="#" class="text-decoration-none text-uppercase fw-bold custom-link">&lt;/Digital
                                     Artists/&gt;</a></p>
                         </div>
                     </div>
@@ -307,7 +373,7 @@
 
 
             <!-- FOOTER -->
-            <footer role="contentinfo" class="bg-dark pt-5 pb-3 gradient-footer">
+            <footer role="contentinfo" class="bg-dark pt-5 pb-3 gradient-footer headline">
                 <div class="container">
                     <div class="row align-items-center justify-content-center">
                         <!-- Column 1 -->
@@ -369,13 +435,13 @@
                                     <p class="text-white text-decoration-none">More information:</p>
                                 </li>
                                 <li class="d-flex nav-item align-items-center">
-                                    <a class="nav-link px-1" href="https://www.linkedin.com/">
-                                        <img src="/images/prueva.svg" title="LinkedIn"></a>
-                                    <a class="nav-link" href="https://github.com/">
+                                    <a class="social-icon nav-link px-1" href="https://www.linkedin.com/">
+                                        <img src="/images/linkedin.svg" title="LinkedIn"></a>
+                                    <a class="social-icon nav-link" href="https://github.com/">
                                         <img src="/images/github.svg" title="GitHub"></a>
-                                    <a class="nav-link" href="https://www.instagram.com/">
+                                    <a class="social-icon nav-link" href="https://www.instagram.com/">
                                         <img src="/images/instagram.svg" title="Instagram"></a>
-                                    <a class="nav-link" href="#">
+                                    <a class="social-icon nav-link" href="#">
                                         <img src="/images/email.svg" title="Email"></a>
                                 </li>
                                 <li class="nav-item">
@@ -400,6 +466,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <!-- Additional libraries -->
+    <script>
+        ScrollReveal().reveal('.headline', { delay: 200 });
+    </script>
+
 </body>
 
 </html>

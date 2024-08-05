@@ -8,6 +8,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="css/style.css" rel="stylesheet">
+  <!-- Additional libraries-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -30,13 +33,13 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link txt" href="index.html">Showroom</a>
+                <a class="nav-link text-uppercase" href="index.html">Showroom</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active txt" aria-current="page" href="#">Our Studio</a>
+                <a class="nav-link active text-uppercase" aria-current="page" href="#">Our Studio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link txt" href="contact-us.html">Contact Us</a>
+                <a class="nav-link text-uppercase" href="contact-us.html">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -58,13 +61,13 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link txt" href="index.html">Showroom</a>
+                  <a class="nav-link text-uppercase" href="index.html">Showroom</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active txt" aria-current="page" href="#">Our Studio</a>
+                  <a class="nav-link active text-uppercase" aria-current="page" href="#">Our Studio</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle txt" href="#" role="button" data-bs-toggle="dropdown"
+                  <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     Masterpieces
                   </a>
@@ -76,7 +79,7 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link txt" href="contact-us.html">Contact Us</a>
+                  <a class="nav-link text-uppercase" href="contact-us.html">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -86,9 +89,9 @@
     </header>
 
     <main id="main" role="main">
-      <section class="intro text-center">
+      <section class="intro text-center headline">
         <div class="container">
-          <h1 class="pt-5 mb-4 txt display-1 fw-bold">Our Studio</h1>
+          <h1 class="pt-5 mb-4 text-uppercase display-4 fw-bold">Our Studio</h1>
           <div class="row">
             <div class="col-lg-12">
               <p>At CODE CONCEPT, Media Studio will deliver creative solutions that are clean, simple, and stunning that
@@ -101,20 +104,24 @@
       </section>
 
       <!-- WHAT WE LOVE TO DO(INTRO): MISSION AND VISION  -->
-      <section class="py-5 text-center">
+      <section class="py-5 text-center headline">
         <div class="container">
-          <h2 class="mb-4 txt">What We Love to do</h2>
-          <p class="col-lg-12 mb-4">We love blending creativity with technology to create unique digital
+          <h2 class="mb-4 text-uppercase">What We Love to do</h2>
+          <h3 class="col-lg-12 mb-4">We love blending creativity with technology to create unique digital
             experiences.From bespoke web designs and interactive platforms to stunning photography, we transform ideas
             into beautiful,compelling stories. Our passion for excellence ensures we exceed our clients' expectations
-            every time.</p>
+            every time.</h3>
 
           <div class="row mb-4">
             <!-- MISSION -->
             <div class="col-sm-6 col-md-12 col-lg-6 ">
               <div class="d-flex flex-column justify-content-center align-items-center">
-                <img class="img-fluid mission-img top-left-rounded bottom-right-rounded" src="images/mission.png"
-                  alt="">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="images/mission-600_x_594.png">
+                  <source media="(min-width: 769px)" srcset="images/mission-1200_x_1188.png">
+                  <img class="img-fluid mission-img" src="images/mission-600_x_594.png"
+                    alt="Photograph of an artist holding a paint and covering their face">
+                </picture>
 
                 <p class="p-5">Our mission is to empower artists and creatives by providing them with stunning web
                   solutions that enhance their online presence and engage their audience. We strive to deliver
@@ -125,7 +132,12 @@
             <!-- VISION -->
             <div class="col-sm-6 col-md-12 col-lg-6 ">
               <div class="d-flex flex-column justify-content-center align-items-center">
-                <img class="img-fluid mission-img top-left-rounded bottom-right-rounded" src="images/vision.png" alt="">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="images/vision-600_x_594.png">
+                  <source media="(min-width: 769px)" srcset="images/vision-1200_x_1188.png">
+                  <img class="img-fluid mission-img" src="images/vision-600_x_594.png"
+                    alt="Photograph of desk with a keyboard, monitor, mouse, celphone and a cat ornament">
+                </picture>
 
                 <p class="p-5">Our vision is to become the go-to digital studio for artists, photographers, and
                   crafters, known for our creative excellence and ability to turn ideas into remarkable digital
@@ -137,18 +149,19 @@
       </section>
 
       <!-- OUR ARTISAN -->
-      <section class="text-center ">
-        <div class="container bg-dark rounded-4">
-          <div class="row align-items-center g-5 pb-5">
+      <section class="text-center headline">
+        <div class="container">
+          <div class=" container bg-dark rounded-4 row align-items-center pb-5">
             <div class="col-lg-6">
-              <h2 class="mb-3 pt-5 txt text-white">Our Artisan</h2>
-              <p class="txt text-white">Meet our Mastermind - Melissa Flores</p>
+              <h2 class="mb-3 pt-5 text-uppercase text-white">Our Artisan</h2>
+              <h3 class="text-uppercase text-white">Meet our Mastermind - Melissa Flores</h3>
               <p class="mb-3 text-white px-4">As the founder and creative force behind Code Concept, Melissa brings a
                 unique blend of artistic talent and technical expertise to every project. With a deep passion for design
                 and a commitment to excellence, she works closely with each client to ensure their vision comes to life
                 in the digital realm. </p>
-              <blockquote class="px-5 text-white blockquote">
-                <p>"Being creative allows me to express my thoughts and emotions with the world without limitations.
+              <blockquote class="px-5 text-white">
+                <p class="fst-italic">"Being creative allows me to express my thoughts and emotions with the world
+                  without limitations.
                   Photography is my primary tool for capturing unique moments that tell a story without using words. I
                   also enjoy crafting, as it enables me to create meaningful and personalized creations with my own
                   personal touch. I like to explore various forms of craft (painting, calligraphy, origami, etc.).
@@ -160,23 +173,29 @@
             </div>
 
             <div class="col-lg-6">
-              <img src="images/our-artisan.png" class="d-block mx-lg-auto img-fluid" alt="Image with two illustrations, one image is the photo of the founder of Code Concept and the other images is a photograph of a origami shape"
-                loading="lazy">
+              <picture>
+                <source media="(max-width: 768px)" srcset="images/our-artisan-600_x_428.png">
+                <source media="(min-width: 769px)" srcset="images/our-artisan-1200_x_857.png">
+                <img class="d-block mx-lg-auto img-fluid" src="images/our-artisan-600_x_428.png"
+                  alt="Image with two illustrations, one image is the photo of the founder of Code Concept and the other images is a photograph of a origami shape">
+              </picture>
             </div>
           </div>
         </div>
       </section>
 
       <!-- ARTIST STATEMENTS -->
-      <section id="values" class="mt-5 pt-5 text-center" role="complementary" itemscope
-      itemtype="https://schema.org/Review">
+      <section id="values" class="mt-5 pt-5 text-center headline" role="complementary" itemscope
+        itemtype="https://schema.org/Review">
         <div class="container">
           <h2 class="mb-3 text-center">Artists Statements</h2>
-          <p class="txt mb-5">Discover the impact of our creative solutions through the words of our valued clients</p>
+          <h3 class="text-uppercase mb-5">Discover the impact of our creative solutions through the words of our valued
+            clients</h3>
 
           <div class="reviews">
             <div class="row">
-              <div class="py-5 col-12 col-md-12 col-lg-4 flex-column justify-content-center align-items-center" itemprop="review">
+              <div class="py-5 col-12 col-md-12 col-lg-4 flex-column justify-content-center align-items-center"
+                itemprop="review">
                 <img src="images/testimonial-catherine.png" class="img-fluid icon-value rounded-circle"
                   alt="Icon image with a monitor that conains a pencil, brush and rule ilustration">
                 <p class="icon-text mt-4 ">“Code Concept transformed my photography business with a stunning portfolio
@@ -185,14 +204,17 @@
                 </p>
               </div>
 
-              <div class="py-5 col-12 col-md-12 col-lg-4 d-flex flex-column justify-content-center align-items-center" itemprop="review">
+              <div class="py-5 col-12 col-md-12 col-lg-4 d-flex flex-column justify-content-center align-items-center"
+                itemprop="review">
                 <img src="images/testimonial-carl.png" class="img-fluid icon-value"
                   alt="Icon image with a paint palette ilustration">
                 <p class="icon-text mt-4 ">"Code Concept beautifully captured my brand and helped me reach a broader
-                  audience. Melissa's creativity and expertise are unmatched!"<br itemprop="author"> — Carl Thompson, Crafter</p>
+                  audience. Melissa's creativity and expertise are unmatched!"<br itemprop="author"> — Carl Thompson,
+                  Crafter</p>
               </div>
 
-              <div class="py-5 col-12 col-md-12 d-flex col-lg-4 flex-column justify-content-center align-items-center" itemprop="review">
+              <div class="py-5 col-12 col-md-12 col-lg-4 d-flex flex-column justify-content-center align-items-center"
+                itemprop="review">
                 <img src="images/testimonial-damian.png" class="img-fluid icon-value"
                   alt="Icon image with a frame ilustration">
                 <p class="icon-text mt-4 ">"Code Concept brought my digital art portfolio to life with an innovative and
@@ -205,92 +227,95 @@
         </div>
       </section>
 
-      <!-- FOOTER -->
-      <footer role="contentinfo" class="bg-dark pt-5 pb-3 gradient-footer">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <!-- Column 1 -->
-                <div class="col-6 col-md-3 mb-4 nav-bar">
-                    <ul class="list-unstyled">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Showroom</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Masterpieces</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="our-studio.html">Our Studio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Art Resources</a>
-                        </li>
-                    </ul>
-                </div>
 
-                <!-- Column 2 -->
-                <div class="col-6 col-md-3 mb-4 nav-bar">
-                    <ul class="list-unstyled">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Artworks Collection</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Featured Artists</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Artist Statements</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Column 3 -->
-                <div class="col-6 col-md-3 mb-4 nav-bar">
-                    <ul class="list-unstyled">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Get Inspired</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact-us.html">Connect with Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">FAQs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Want to Join Us?</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Column 4 -->
-                <div class="col-6 col-md-3 mb-4">
-                    <ul class="list-unstyled">
-                        <li class="">
-                            <p class="text-white text-decoration-none">More information:</p>
-                        </li>
-                        <li class="d-flex nav-item align-items-center">
-                            <a class="nav-link px-1" href="https://www.linkedin.com/"> 
-                                <img src="/images/prueva.svg" title="LinkedIn"></a>
-                            <a class="nav-link" href="https://github.com/">
-                                <img src="/images/github.svg" title="GitHub"></a>
-                            <a class="nav-link" href="https://www.instagram.com/">
-                                <img src="/images/instagram.svg" title="Instagram"></a>
-                            <a class="nav-link" href="#">
-                                <img src="/images/email.svg" title="Email"></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Terms of Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Privacy Policiy</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-12 mb-4">
-                    <p class="text-center text-white">&copy; 2024 | Code Concept</p>
-                </div>
+
+
+      <!-- FOOTER -->
+      <footer role="contentinfo" class="bg-dark pt-5 pb-3 gradient-footer headline">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <!-- Column 1 -->
+            <div class="col-6 col-md-3 mb-4 nav-bar">
+              <ul class="list-unstyled">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Showroom</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Masterpieces</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="our-studio.html">Our Studio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Art Resources</a>
+                </li>
+              </ul>
             </div>
+
+            <!-- Column 2 -->
+            <div class="col-6 col-md-3 mb-4 nav-bar">
+              <ul class="list-unstyled">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Artworks Collection</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Featured Artists</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Artist Statements</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Column 3 -->
+            <div class="col-6 col-md-3 mb-4 nav-bar">
+              <ul class="list-unstyled">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Get Inspired</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact-us.html">Connect with Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">FAQs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Want to Join Us?</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Column 4 -->
+            <div class="col-6 col-md-3 mb-4">
+              <ul class="list-unstyled">
+                <li class="">
+                  <p class="text-white text-decoration-none">More information:</p>
+                </li>
+                <li class="d-flex nav-item align-items-center">
+                  <a class="social-icon nav-link px-1" href="https://www.linkedin.com/">
+                    <img src="/images/linkedin.svg" title="LinkedIn"></a>
+                  <a class="social-icon nav-link" href="https://github.com/">
+                    <img src="/images/github.svg" title="GitHub"></a>
+                  <a class="social-icon nav-link" href="https://www.instagram.com/">
+                    <img src="/images/instagram.svg" title="Instagram"></a>
+                  <a class="social-icon nav-link" href="#">
+                    <img src="/images/email.svg" title="Email"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Terms of Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Privacy Policiy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-12 mb-4">
+              <p class="text-center text-white">&copy; 2024 | Code Concept</p>
+            </div>
+          </div>
         </div>
-    </footer>
+      </footer>
 
     </main>
   </div> <!--Main wrapper-->
@@ -298,6 +323,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
+  <!-- Additional libraries -->
+  <script>
+    ScrollReveal().reveal('.headline', { delay: 200 });
+  </script>
+
 </body>
 
 </html>

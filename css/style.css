@@ -4,15 +4,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mitr:wght@200;300;400;500;600;700&display=swap');
 
 
-/* html {
+html {
     box-sizing: border-box;
-}*/
+}
 
 /* *,
 *::before,
 *::after {
   box-sizing: border-box;
-} */
+}
 
 /* Root Variables */
 :root {
@@ -20,7 +20,7 @@
     --colour-two: #CBDF1E;
     --colour-three: #7B4B9D;
     --colour-four: #1D252C;
-    --colour-five:#6885D1;
+    --colour-five: #6885D1;
     --background: #fafafa;
     --ff-headings: "Mitr", sans-serif;
     --ff-sub-headings: "Josefin Sans", sans-serif;
@@ -28,7 +28,24 @@
     --font-size-general: 1rem;
     --font-weight-general: 400;
     --mw: 1200px;
+    /* typescale */
+
+    --h1-desktop: 3.125rem;
+    --h2-desktop: 2.5rem;
+    --h3-desktop: 1.875rem;
+    --p-desktop: 1.25rem;
+
+    --h1-tablet: 2.25rem;
+    --h2-tablet: 1.75rem;
+    --h3-tablet: 1.125rem;
+    --p-tablet: 1rem;
+
+    --h1-mobile: 2rem;
+    --h2-mobile: 1.5rem;
+    --h3-mobile: 1rem;
+    --p-mobile: 1rem;
 }
+
 
 
 body {
@@ -40,75 +57,68 @@ body {
 }
 
 .main-wraper {
-    max-width:var(--mw);
+    max-width: var(--mw);
 }
 
 h1 {
     font-family: var(--ff-headings);
     text-transform: uppercase;
     font-weight: 800;
-    font-size: 1.85rem;
+    font-size: var(--h1-mobile);
 }
 
 h2 {
     font-family: var(--ff-sub-headings);
     text-transform: uppercase;
     font-weight: 600;
+    font-size: var(--h2-mobile);
 }
 
-h3,
+h3 {
+    font-family: var(--ff-general);
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--p-mobile);
+
+}
+
 nav,
 p,
 a {
     font-family: var(--ff-general);
-    font-weight:400;
+    font-weight: 400;
     font-style: normal;
+    font-size: var(--p-mobile);
+
 }
 
-
-.txt {
-    text-transform: uppercase;
-}
-
-a{
+a {
     cursor: pointer;
 }
 
-/* anchor links */
-.nav-link a{
-  /* --bs-navbar-color: rgba(255, 255, 255, 0.55); */
-  --bs-navbar-hover-color: #A04ADD;
-  /* --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25); */
-  /* --bs-navbar-active-color: var(--colour-one); */
-  /* --bs-navbar-brand-color: #fff; */
-  /* --bs-navbar-brand-hover-color: #fff; */
-  /* --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1); */
-  /* --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); */
-}
-
 .nav-link {
-        --bs-nav-link-font-weight: 600;
-        --bs-nav-link-color: var(--background);
-        --bs-nav-link-hover-color: var(--colour-two);
-        /* --bs-nav-link-active-color:red; */
+    --bs-nav-link-font-weight: 600;
+    --bs-nav-link-color: var(--background);
+    --bs-nav-link-hover-color: var(--colour-two);
 }
 
 .nav-link.active {
-    --bs-navbar-active-color:var(--colour-five);
+    --bs-navbar-active-color: var(--colour-five);
 }
 
 /* Change colour hamburger menu icon */
 .navbar-toggler {
     --bs-navbar-toggler-border-color: var(--background);
 }
+
 .navbar-toggler-icon {
-  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 /* Button color and states */
 .btn-primary {
     --bs-btn-bg: var(--colour-one);
-    --bs-btn-border-color:var(--colour-one);
+    --bs-btn-border-color: var(--colour-one);
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: var(--colour-three);
     --bs-btn-hover-border-color: var(--colour-three);
@@ -118,13 +128,13 @@ a{
     --bs-btn-active-border-color: #7838a6;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: var(--colour-one);;
-    --bs-btn-disabled-border-color: var(--colour-one);;
-  }
+    --bs-btn-disabled-bg: var(--colour-one);
+    --bs-btn-disabled-border-color: var(--colour-one);
+}
 
-  .btn-light {
+.btn-light {
     --bs-btn-bg: var(--colour-two);
-    --bs-btn-border-color:var(--colour-two);
+    --bs-btn-border-color: var(--colour-two);
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: var(--colour-five);
     --bs-btn-hover-border-color: var(--colour-five);
@@ -134,13 +144,30 @@ a{
     --bs-btn-active-border-color: #6384d5;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: var(--colour-one);;
-    --bs-btn-disabled-border-color: var(--colour-one);;
-  }
+    --bs-btn-disabled-bg: var(--colour-one);
+    ;
+    --bs-btn-disabled-border-color: var(--colour-one);
+    ;
+}
 
-  .dropdown-menu{
+.dropdown-menu {
     background-color: var(--colour-five);
-  }
+}
+
+/* Custom Links - Featured Artists, Follow Us */
+.custom-link {
+    color: #1D252C;
+}
+.custom-link:hover,
+.custom-link:focus {
+    color:var(--colour-three);
+}
+
+/* FOOTER */
+.social-icon img:hover {
+    filter: brightness(0.5);
+}
+
 
 /* ==================================================
                     DEFAULT VALUES - MOBILE                   
@@ -164,7 +191,7 @@ a{
 }
 
 .gradient {
-    height:15vh;
+    height: 15vh;
     background: rgb(29, 37, 44);
     background: linear-gradient(180deg,
             rgba(29, 37, 44, 1) 0%,
@@ -196,6 +223,10 @@ a{
 }
 
 /* TRANSFORM YOUR DIGITAL PRESENCE */
+.bg-dark {
+    background-color: var(--colour-four) !important;
+}
+
 .icon-value {
     max-width: 160px;
 }
@@ -218,7 +249,7 @@ a{
 .tape {
     width: 5rem;
     position: absolute;
-    transform: translate(-160px, -20px);
+    transform: translate(-240px, -20px);
 }
 
 .position-tape-two {
@@ -231,22 +262,36 @@ a{
 }
 
 /* MASTERPIECES */
+.service {
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+}
+
+.service:hover {
+    transform: scale(1.05);
+    transition: all .3s ease-in-out;
+}
+
 .service-rounded {
     border-top-left-radius: 45px;
     border-bottom-right-radius: 45px;
 
 }
 
+.text-bg-dark {
+    background-color: var(--colour-four) !important;
+}
+
 /* FEATURED ARTISTS */
-.categories img{
+.categories img {
     width: 80%;
 }
 
-.left{
+.left {
     transform: rotate(-20deg);
 }
 
-.right{
+.right {
     transform: rotate(20deg);
 }
 
@@ -275,7 +320,7 @@ a{
 /******************** OUR STUDIO ********************/
 
 /* MISSION */
-.mission-img{
+.mission-img {
     object-fit: cover;
     height: 35vh;
     width: 35vh;
@@ -290,16 +335,83 @@ a{
 }
 
 /* VISIT US */
-/* set the dimensions and padding for the map */
+/* set the dimensions for the map */
 .block-map .gmap {
     border: 0;
     width: 100%;
-    height: 50vh;
+    height: 30vh;
 }
 
-/* Animations */
+
+
+/* ANIMATIONS */
+
+/* Showroom - button */
 .animate__animated.animate__bounce {
-    --animate-duration: 2s;
-  }
+    --animate-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+/* Contact-Us - Follo Us */
+
+.follow {
+    transition: transform 0.3s ease
+}
+
+.follow:hover {
+    transform: scale(1.1);
+}
+
+/* ==================================================
+                   VALUES - TABLET                   
+   ================================================== */
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: var(--h1-tablet);
+    }
+    
+    h2 {
+        font-size: var(--h2-tablet);
+    }
+    
+    h3 {
+        font-size: var(--p-tablet);
+    
+    }
+
+    nav,
+    p,
+    a {
+        font-size: var(--p-tablet);
+    
+    }
+}
+
+/* ==================================================
+                   VALUES - DESKTOP                   
+   ================================================== */
+
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: var(--h1-desktop);
+    }
+    
+    h2 {
+        font-size: var(--h2-desktop);
+    }
+    
+    h3 {
+        font-size: var(--p-desktop);
+    
+    }
+
+    nav,
+    p,
+    a {
+        font-size: var(--p-desktop);
+    
+    }
+}
 
 
