@@ -95,9 +95,9 @@
           <div class="row">
             <div class="col-lg-12">
               <p>At CODE CONCEPT, Media Studio will deliver creative solutions that are clean, simple, and stunning that
-                will make your business stand out among others.Our Media Studio focuses on artistic small businesses
-                looking to establish a solid online presence that differentiates them from their competitors through
-                unique and story-driven designs.</p>
+                will make your business stand out among others. <br>Our Media Studio focuses on artistic small
+                businesses looking to establish a solid online presence that differentiates them from their competitors
+                through unique and story-driven designs.</p>
             </div>
           </div>
         </div>
@@ -139,8 +139,8 @@
                     alt="Photograph of desk with a keyboard, monitor, mouse, celphone and a cat ornament">
                 </picture>
 
-                <p class="p-5">Our vision is to become the go-to digital studio for artists, photographers, and
-                  crafters, known for our creative excellence and ability to turn ideas into remarkable digital
+                <p class="p-5">Our vision is to become the go-to digital studio for artists, crafters and
+                  photographers, known for our creative excellence and ability to turn ideas into remarkable digital
                   masterpieces. We aim to foster a community where creativity and technology seamlessly blend.</p>
               </div>
             </div>
@@ -176,7 +176,7 @@
               <picture>
                 <source media="(max-width: 768px)" srcset="images/our-artisan-600_x_428.png">
                 <source media="(min-width: 769px)" srcset="images/our-artisan-1200_x_857.png">
-                <img class="d-block mx-lg-auto img-fluid" src="images/our-artisan-600_x_428.png"
+                <img class="d-block img-fluid" src="images/our-artisan-600_x_428.png"
                   alt="Image with two illustrations, one image is the photo of the founder of Code Concept and the other images is a photograph of a origami shape">
               </picture>
             </div>
@@ -185,20 +185,21 @@
       </section>
 
       <!-- ARTIST STATEMENTS -->
-      <section id="values" class="mt-5 pt-5 text-center headline" role="complementary" itemscope
+      <section class="mt-5 pt-5 text-center headline" role="complementary" itemscope
         itemtype="https://schema.org/Review">
         <div class="container">
           <h2 class="mb-3 text-center">Artists Statements</h2>
           <h3 class="text-uppercase mb-5">Discover the impact of our creative solutions through the words of our valued
             clients</h3>
 
-          <div class="reviews">
+          <div id="testimonials" class="reviews">
             <div class="row">
               <div class="py-5 col-12 col-md-12 col-lg-4 flex-column justify-content-center align-items-center"
                 itemprop="review">
                 <img src="images/testimonial-catherine.png" class="img-fluid icon-value rounded-circle"
                   alt="Icon image with a monitor that conains a pencil, brush and rule ilustration">
-                <p class="icon-text mt-4 ">“Code Concept transformed my photography business with a stunning portfolio
+                <p class="icon-text mt-4 fst-italic">“Code Concept transformed my photography business with a stunning
+                  portfolio
                   site. Their attention to detail and understanding of my vision were incredible. Highly recommend!”
                   <br itemprop="author">— Catherine Mooney, Photographer
                 </p>
@@ -208,7 +209,8 @@
                 itemprop="review">
                 <img src="images/testimonial-carl.png" class="img-fluid icon-value"
                   alt="Icon image with a paint palette ilustration">
-                <p class="icon-text mt-4 ">"Code Concept beautifully captured my brand and helped me reach a broader
+                <p class="icon-text mt-4 fst-italic">"Code Concept beautifully captured my brand and helped me reach a
+                  broader
                   audience. Melissa's creativity and expertise are unmatched!"<br itemprop="author"> — Carl Thompson,
                   Crafter</p>
               </div>
@@ -217,7 +219,8 @@
                 itemprop="review">
                 <img src="images/testimonial-damian.png" class="img-fluid icon-value"
                   alt="Icon image with a frame ilustration">
-                <p class="icon-text mt-4 ">"Code Concept brought my digital art portfolio to life with an innovative and
+                <p class="icon-text mt-4 fst-italic">"Code Concept brought my digital art portfolio to life with an
+                  innovative and
                   captivating design. Their blend of creativity and technical expertise is remarkable."
                   <br itemprop="author"> — Damian Sule, Concept Artist
                 </p>
@@ -227,8 +230,56 @@
         </div>
       </section>
 
+      <!-- ARTIST STATEMENTS - Caroussel for mobile and tablet -->
+      <section id="carouselExampleAutoplaying" role="complementary" itemscope itemtype="https://schema.org/Review"
+        class="carousel slide mt-5 col-12 headline" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" class="bg-dark active" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" class="bg-dark" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" class="bg-dark" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
 
+        <div class="carousel-inner col-12 mb-5">
+          <div class="px-5 carousel-item justify-content-center mb-5 active">
+            <div class="d-flex flex-column justify-content-center align-items-center" itemprop="review">
+              <img src="images/testimonial-catherine.png" class="img-fluid icon-value rounded-circle"
+                alt="Icon image with a monitor that conains a pencil, brush and rule ilustration">
+              <p class="px-5 mt-4 text-center">“Code Concept transformed my photography business with a stunning
+                portfolio
+                site. Their attention to detail and understanding of my vision were incredible. Highly recommend!”
+                <br itemprop="author">— Catherine Mooney, Photographer
+              </p>
+            </div>
+          </div>
 
+          <div class="px-5 carousel-item justify-content-center mb-5">
+            <div class="px-5 d-flex flex-column justify-content-center align-items-center" itemprop="review">
+              <img src="images/testimonial-carl.png" class="img-fluid icon-value"
+                alt="Icon image with a paint palette ilustration">
+              <p class="px-5 icon-text mt-4 text-center">"Code Concept beautifully captured my brand and helped me reach
+                a
+                broader
+                audience. Melissa's creativity and expertise are unmatched!"<br itemprop="author"> — Carl Thompson,
+                Crafter</p>
+            </div>
+          </div>
+
+          <div class="px-5 carousel-item justify-content-center mb-5">
+            <div class="d-flex flex-column justify-content-center align-items-center" itemprop="review">
+              <img src="images/testimonial-damian.png" class="img-fluid icon-value"
+                alt="Icon image with a frame ilustration">
+              <p class="px-5 icon-text mt-4 text-center">"Code Concept brought my digital art portfolio to life with an
+                innovative and
+                captivating design. Their blend of creativity and technical expertise is remarkable."
+                <br itemprop="author"> — Damian Sule, Concept Artist
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- FOOTER -->
       <footer role="contentinfo" class="bg-dark pt-5 pb-3 gradient-footer headline">

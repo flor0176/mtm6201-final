@@ -321,6 +321,15 @@ a {
     width: 35vh;
 }
 
+    
+#testimonials{
+    display: none;
+}
+
+#carouselExampleAutoplaying{
+    display: block;
+}
+
 /******************** CONTACT US ********************/
 
 .tape-form {
@@ -381,6 +390,14 @@ a {
         font-size: var(--p-tablet);
 
     }
+    
+    #testimonials{
+        display: none;
+    }
+
+    #carouselExampleAutoplaying{
+        display: block;
+    }
 }
 
 /* ==================================================
@@ -406,5 +423,13 @@ a {
     a {
         font-size: var(--p-desktop);
 
+    }
+
+    #testimonials{
+        display: block;
+    }
+
+    #carouselExampleAutoplaying{
+        display: none;
     }
 }
