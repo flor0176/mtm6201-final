@@ -8,12 +8,6 @@ html {
     box-sizing: border-box;
 }
 
-/* *,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 /* Root Variables */
 :root {
     --colour-one: #DB388F;
@@ -158,9 +152,10 @@ a {
 .custom-link {
     color: #1D252C;
 }
+
 .custom-link:hover,
 .custom-link:focus {
-    color:var(--colour-three);
+    color: var(--colour-three);
 }
 
 /* FOOTER */
@@ -370,21 +365,21 @@ a {
     h1 {
         font-size: var(--h1-tablet);
     }
-    
+
     h2 {
         font-size: var(--h2-tablet);
     }
-    
+
     h3 {
         font-size: var(--p-tablet);
-    
+
     }
 
     nav,
     p,
     a {
         font-size: var(--p-tablet);
-    
+
     }
 }
 
@@ -396,22 +391,20 @@ a {
     h1 {
         font-size: var(--h1-desktop);
     }
-    
+
     h2 {
         font-size: var(--h2-desktop);
     }
-    
+
     h3 {
         font-size: var(--p-desktop);
-    
+
     }
 
     nav,
     p,
     a {
         font-size: var(--p-desktop);
-    
+
     }
 }
-
-
