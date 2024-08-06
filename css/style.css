@@ -321,12 +321,12 @@ a {
     width: 35vh;
 }
 
-    
-#testimonials{
+
+#testimonials {
     display: none;
 }
 
-#carouselExampleAutoplaying{
+#carouselExampleAutoplaying {
     display: block;
 }
 
@@ -390,12 +390,12 @@ a {
         font-size: var(--p-tablet);
 
     }
-    
-    #testimonials{
+
+    #testimonials {
         display: none;
     }
 
-    #carouselExampleAutoplaying{
+    #carouselExampleAutoplaying {
         display: block;
     }
 }
@@ -425,11 +425,11 @@ a {
 
     }
 
-    #testimonials{
+    #testimonials {
         display: block;
     }
 
-    #carouselExampleAutoplaying{
+    #carouselExampleAutoplaying {
         display: none;
     }
 }
