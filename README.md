@@ -12,7 +12,7 @@ This platform has been designed to showcase our creative and innovative services
 
 Developing this site has involved extensive planning, design, and testing to create an engaging and intuitive user experience. During this process, I faced challenges such as creating visually dynamic interactions, ensuring intuitive navigation, and achieving cross-device compatibility. This process has been challenging but immensely rewarding, enhancing my skills in user experience design, web development, and problem-solving. The journey has taught me the importance of attention to detail, user feedback, and continuous learning. Despite the difficulties, the knowledge and experience gained make it all worthwhile, motivating me to keep improving and exploring new opportunities in web design and development.
 
-Thank you for visiting Code Concept, and I hope you enjoy our creative approach to digital storytelling.
+Thank you for visiting Code Concept, and I hope you enjoy my creative approach to digital storytelling.
 
 
 ## Assets and Resources Used
